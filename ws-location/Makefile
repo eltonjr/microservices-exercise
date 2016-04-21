@@ -1,4 +1,4 @@
-.PHONY: deps clean
+.PHONY: deps clean run
 
 deps:
 	go get
@@ -6,5 +6,8 @@ deps:
 clean:
 	rm location
 
-location:
+run: location
+	./location
+
+location: deps
 	go build location.go

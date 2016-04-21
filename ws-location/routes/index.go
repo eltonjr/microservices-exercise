@@ -11,7 +11,7 @@ const (
 )
 
 func Index(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
-	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Content-Type", "text/plain")
 	w.WriteHeader(success)
 	fmt.Fprint(w, "Location service is online!\n")
 }
