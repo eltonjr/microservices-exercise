@@ -17,6 +17,7 @@ func main() {
 
 	// logic goes here
 	r.GET("/v1", routes.Index)
+	r.GET("/v1/locations", routes.Locations)
 
 	fmt.Printf("Location is ready @ %s\n", address)
 
