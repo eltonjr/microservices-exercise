@@ -7,7 +7,6 @@ import (
 	"net/http"
 
 	"github.com/eltonjr/microservices-exercise/ws-location/model"
-	"github.com/julienschmidt/httprouter"
 )
 
 const (
@@ -16,14 +15,14 @@ const (
 )
 
 // /v1
-func Index(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
+func Index(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/plain")
 	w.WriteHeader(OK)
 	fmt.Fprint(w, "Location service is online!\n")
 }
 
 // /v1/locations
-func Locations(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
+func Locations(w http.ResponseWriter, r *http.Request) {
 	l, err := json.Marshal(model.GetLocations())
 
 	if err != nil {
