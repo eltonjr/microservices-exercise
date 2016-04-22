@@ -10,4 +10,4 @@ run: location
 	./location
 
 location: deps
-	go build location.go
+	CGO_ENABLED=0 go build -v -a -installsuffix cgo -o location
