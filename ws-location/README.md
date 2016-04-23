@@ -34,7 +34,7 @@ make ops-run
 
 ## Examples
 
-* **/v1  **
+* **/v1**
 
 
 `curl -X GET "http://localhost:42000/v1"`
