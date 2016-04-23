@@ -77,7 +77,7 @@ A Makefile is available to ease the process.
 
 `make deps`: Install the needed dependencies;  
 `make clean`: Remove the binaries from previous compilation;  
-`make location`: Compile the application;  
+`make build`: Compile the application;  
 `make run`: Get the dependencies, compile the code and run the application;  
 `make ops-build`: Put the compiled code inside a docker image called ws-location. You need the compiled code to do that!  
 `make ops-run`: Starts a docker container with the ws-location image.

@@ -1,4 +1,4 @@
-.PHONY: deps clean run
+.PHONY: deps clean run build ops-build ops-run
 
 deps:
 	go get
@@ -6,11 +6,11 @@ deps:
 clean:
 	rm location
 
-run: location
-	./location
-
-location: deps
+build: deps
 	CGO_ENABLED=0 go build -v -a -installsuffix cgo -o location
+
+run: build
+	./location
 
 ops-build:
 	docker build -t ws-location .
