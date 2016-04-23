@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Demographics {
+public class DemographicsController {
 
-    private Logger logger = Logger.getLogger(Demographics.class);
+    private Logger logger = Logger.getLogger(DemographicsController.class);
 
     @RequestMapping(path = "/v1", method = RequestMethod.GET, produces = "plain/text")
     public String index() {
