@@ -2,17 +2,37 @@ package ws.demographics.model;
 
 public class Demographics {
 
+    private Integer id;
+
     private String name;
 
     private String state;
 
     private Long population;
 
-    private Integer numOfCars;
+    private Long numOfCars;
 
     private Long size;
 
-    private Long bikeLaneExtension;
+    private Integer bikeLaneExtension;
+
+    public Demographics(Integer id, String name, String state, Long population, Long numOfCars, Long size, Integer bikeLaneExtension) {
+        this.id = id;
+        this.name = name;
+        this.state = state;
+        this.population = population;
+        this.numOfCars = numOfCars;
+        this.size = size;
+        this.bikeLaneExtension = bikeLaneExtension;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -38,11 +58,11 @@ public class Demographics {
         this.population = population;
     }
 
-    public Integer getNumOfCars() {
+    public Long getNumOfCars() {
         return numOfCars;
     }
 
-    public void setNumOfCars(Integer numOfCars) {
+    public void setNumOfCars(Long numOfCars) {
         this.numOfCars = numOfCars;
     }
 
@@ -54,11 +74,11 @@ public class Demographics {
         this.size = size;
     }
 
-    public Long getBikeLaneExtension() {
+    public Integer getBikeLaneExtension() {
         return bikeLaneExtension;
     }
 
-    public void setBikeLaneExtension(Long bikeLaneExtension) {
+    public void setBikeLaneExtension(Integer bikeLaneExtension) {
         this.bikeLaneExtension = bikeLaneExtension;
     }
 }
