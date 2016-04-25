@@ -10,4 +10,4 @@ ops-build:
 	docker build -t ws-business .
 
 ops-run:
-	docker run --name ws-business -d ws-business
+	docker run --name ws-business --net host -d ws-business

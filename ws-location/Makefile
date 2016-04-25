@@ -16,4 +16,4 @@ ops-build:
 	docker build -t ws-location .
 
 ops-run:
-	docker run --name ws-location -d ws-location
+	docker run --name ws-location --net host -d ws-location
