@@ -16,4 +16,4 @@ ops-build:
 	docker build -t ws-demographics .
 
 ops-run:
-	docker run --name ws-demographics -d ws-demographics
+	docker run --name ws-demographics --net host -d ws-demographics
