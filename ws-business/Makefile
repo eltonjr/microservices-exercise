@@ -3,7 +3,7 @@
 deps:
 	npm install
 
-run: build
+run:
 	node index.js
 
 ops-build:

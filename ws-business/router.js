@@ -12,7 +12,8 @@ module.exports = {
 	},
 
 	save: function(req, res) {
-		res.status(404).send('Nothing here yet');
+		console.log(req.body);
+		res.json(require('./model').put(req.body));
 	}
 
 };
