@@ -1,4 +1,9 @@
 ws-demographics/.idea/
 ws-demographics/*.iml
-ws-demographics/target/
+ws-demographics/target/*
+!ws-demographics/target/*.jar
+ws-demographics/target/classes/
+ws-demographics/target/generated-sources/
+ws-demographics/target/maven-archiver/
+ws-demographics/target/maven-status/
 ws-business/node_modules/
