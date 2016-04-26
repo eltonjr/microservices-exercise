@@ -6,6 +6,6 @@ stop() {
 	cd ..
 }
 
-for proj in ws-location ws-demographics ws-business client; do
+for proj in ws-location ws-demographics ws-business ws-client; do
 	stop $proj
 done

@@ -1,0 +1,5 @@
+<div class="cat-list" ng-controller="LocationController">
+	<div ng-repeat="location in collection()" ng-click="select(location)" class="cat-item">
+		{{location.city}}
+	</div>
+</div>

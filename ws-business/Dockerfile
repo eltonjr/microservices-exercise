@@ -4,8 +4,7 @@ MAINTAINER Elton Hoffmann <eltonhnjr@gmail.com>
 
 ADD . /opt/ws-business/
 
-RUN cd /opt/ws-business/ \
-	npm install
+RUN cd /opt/ws-business/ &&	npm install
 
 EXPOSE 42002
 

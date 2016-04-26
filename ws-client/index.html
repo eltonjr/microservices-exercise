@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+			<link href="styles/main.css" rel="stylesheet" type="text/css">
+
+			<title>Webservice Consumer</title>
+
+		</head>
+
+		<body ng-app="ws-consumer">
+
+			<!-- App content -->
+			<div class="content" ng-view></div>
+			<div class="footer"></div>
+
+			<!-- Vendor scripts -->
+			<script src="bower_components/angular/angular.min.js"></script>
+			<script src="bower_components/angular-route/angular-route.min.js"></script>
+
+			<!-- App scripts -->
+			<script src="scripts/app.js"></script>
+			<script src="scripts/constant/routes.js"></script>
+			<script src="scripts/controller/main.js"></script>
+			<script src="scripts/controller/list.js"></script>
+			<script src="scripts/controller/list-saved.js"></script>
+			<script src="scripts/controller/current.js"></script>
+			<script src="scripts/service/locationProvider.js"></script>
+			<script src="scripts/service/demographicsProvider.js"></script>
+			<script src="scripts/service/businessProvider.js"></script>
+			<script src="scripts/service/selector.js"></script>
+		</body>
+</html>

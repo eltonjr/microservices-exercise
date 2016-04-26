@@ -12,7 +12,7 @@ There are three web services handling the system domain.
 * **ws-demographics**: Written in Java. Holds demographic infos about each city.
 * **ws-business**: Written in NodeJs. Stores current business running in each city.
 
-There is also a **client** which is a Single Page Application running behind an NGINX.  
+There is also a **ws-client** which is a Single Page Application running behind an NGINX.  
 The webpage interacts with the webservices to GET data to be displayed and to POST data to be stored in the webservices.
 
 ## How to run

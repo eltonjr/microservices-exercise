@@ -1,0 +1,11 @@
+<div class="cat-wrapper" ng-show="selected()" ng-controller="FormController" ng-cloak>
+	<p><span class="city-name">{{selected().city}}</span></p>
+
+	<p>Tamanho da cidade: <span class="info">{{selected().demo.size}} km²</span></p>
+	<p>População: <span class="info">{{selected().demo.population}}</span></p>
+	<p>Número de veículos: <span class="info">{{selected().demo.numOfCars}}</span></p>
+	<p>Extensão de ciclovia: <span class="info">{{selected().demo.bikeLaneExtension}} km</span></p>
+
+	<p><textarea rows="5" cols="30" placeholder="Adicione mais informações..." ng-model="additional"></textarea></p>
+	<p><button ng-click="save(selected(), additional)">Criar estabelecimento</button></p>
+</div>
