@@ -1,10 +1,14 @@
-.PHONY: deps run ops-build ops-run
+.PHONY: deps run ops-build ops-run ops-clean
 
 deps:
 	npm install
 
 run:
 	node index.js
+
+ops-clean:
+	docker rm -f ws-business
+	docker rmi ws-business
 
 ops-build:
 	docker build -t ws-business .

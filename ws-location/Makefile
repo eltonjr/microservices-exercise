@@ -1,4 +1,4 @@
-.PHONY: deps clean run build ops-build ops-run
+.PHONY: deps clean run build ops-build ops-run ops-clean
 
 deps:
 	go get
@@ -11,6 +11,10 @@ build: deps
 
 run: build
 	./location
+
+ops-clean:
+	docker rm -f ws-location
+	docker rmi ws-location
 
 ops-build:
 	docker build -t ws-location .

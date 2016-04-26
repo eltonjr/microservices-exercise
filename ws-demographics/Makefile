@@ -1,4 +1,4 @@
-.PHONY: deps clean run build ops-build ops-run
+.PHONY: deps clean run build ops-build ops-run ops-clean
 
 deps:
 	mvn install
@@ -11,6 +11,10 @@ build:
 
 run:
 	mvn spring-boot:run
+
+ops-clean:
+	docker rm -f ws-demographics
+	docker rmi ws-demographics
 
 ops-build:
 	docker build -t ws-demographics .
