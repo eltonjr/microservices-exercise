@@ -7,4 +7,4 @@ ws-demographics/target/generated-sources/
 ws-demographics/target/maven-archiver/
 ws-demographics/target/maven-status/
 ws-business/node_modules/
-client/bower_components/
+ws-client/bower_components/
