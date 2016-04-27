@@ -8,6 +8,8 @@ The main goal here is to exercise the creation of three webservices that will ha
 
 There are three web services handling the system domain.
 
+![architecture](https://raw.githubusercontent.com/eltonjr/microservices-exercise/master/docs/microservices-exercise.png)
+
 * **ws-location**: Written in Go. Holds a list of "avaliable" cities.
 * **ws-demographics**: Written in Java. Holds demographic infos about each city.
 * **ws-business**: Written in NodeJs. Stores current business running in each city.
